@@ -1,0 +1,19 @@
+*{
+    margin: 0;padding: 0;
+}
+
+body{
+    margin: 0;padding: 0;
+}
+
+h1{
+    font-size: 4vw;
+}
+.main{
+    flex-direction: column;
+}
+
+.sep{
+    width: 80vw;
+    height: 0.5vh;
+}
