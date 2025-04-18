@@ -1,0 +1,171 @@
+.product-page {
+    display: flex;
+    gap: 60px;
+    padding: 3vh 0vw;
+    font-family: 'Helvetica Neue', sans-serif;
+    justify-content: flex-start;
+    margin-top:10vh;
+  }
+  
+
+  
+  .thumbnail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+
+  
+  .thumbnail:hover {
+    border-color: black;
+  }
+  
+  .left-column {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+  }
+  
+  .thumbnail {
+    width: 20vw;
+    height: 10vh;
+    padding: 0.2vw 0.5vh;
+    object-fit: contain;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    border-radius: 6px;
+  }
+
+  .thumbnail:hover{
+    transform: scale(1.5);
+    margin-top:2vh;
+    margin-bottom:2vh;
+  }
+  
+  .main-image img {
+    width: 100vw; 
+    height: 65vh;
+    object-fit: contain;
+    margin-top:25vh;
+    border-radius: 8px;
+    /* margin-left: 20vw; */
+    transition: 0.2s all ease-in;
+  }
+
+  .main-image img:hover{
+    
+    /* padding:7vh 2vw; */
+    height: 75vh;
+    margin-top:15vh;
+  }
+  
+  
+  .right-column {
+    max-width: 1000px;
+    
+  }
+  
+  .brand {
+    font-weight: 600;
+    color: #444;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .old-price {
+    color: red;
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-left: 12px;
+  }
+  
+  .tax {
+    color: #888;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .label {
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  
+  .color-box {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid red;
+    color:red;
+    margin-top: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .size-grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+    max-width: 350px;
+  }
+  
+  .size-btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .size-btn.selected {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #f9f9f9;
+    color:red;
+  }
+  
+  .add-ca{
+    margin-top:5vh;
+    margin-left:0vw;
+    background-color: black;
+    border: none;
+    border-radius: 5px 5px;
+    color:grey;
+    padding:1.5vh 3vw;
+    transition: 0.3s all ease-in;
+  }
+
+  .add-ca:hover{
+    background-color: black;
+    transform: scale(1.03);
+  }
+
+  .counter{
+    display:flex;
+    gap: 15px;
+    margin-top:3vh;
+    border:1px solid black;
+    width: 6.2vw;
+    padding:1vh 0.5vw;
+    margin-left: 0.5vw;
+    margin-bottom: 2vh;
+  }
+
+  #lokl, #kol{
+    position: relative;
+    top:5px;
+  }
+

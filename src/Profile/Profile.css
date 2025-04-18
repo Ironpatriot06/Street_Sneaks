@@ -6,14 +6,96 @@ body{
     margin: 0;padding: 0;
 }
 
-h1{
-    font-size: 4vw;
-}
-.main{
-    flex-direction: column;
+.maina{
+    margin: 0;padding: 0;
+    background-image: url("/src/assets/pic.jpg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: none;
+    width: 100vw;
+    height: 100vh;
 }
 
-.sep{
-    width: 80vw;
-    height: 0.5vh;
+.maine{
+    display: flex;
+    width: 100vw;
+    height: 92vh;
+    justify-content: center;
+    align-items: center;
 }
+
+.containerr{
+    height: 55vh;
+    width: 45vw;
+    background-color: rgba(230, 227, 227, 0.653);
+    border-radius: 20px 20px;
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-left:18.5vw;
+}
+
+
+#E{
+    margin-left: 5vw;
+    margin-top:5vh;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.email{
+    height: 5vh;
+    margin-left: 5vw;
+    margin-top:1.5vh;
+    width: 35vw;
+    padding-left: 5px;
+    border:2px solid black;
+}
+
+#P{
+    margin-left: 5vw;
+    margin-top:1.5vh;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#pass{
+    height: 5vh;
+    margin-left: 5vw;
+    margin-top:1.5vh;
+    width: 35vw;
+    border:2px solid black;
+    padding-left: 5px;
+}
+
+#L{
+    border-radius:10px 10px;
+    border:2px solid black;
+    padding: 5px 20px;
+    margin-top:5vh;
+    margin-left:18.5vw;
+    font-weight: 600;
+    transition: 0.2s all ease-in;
+    cursor: pointer;
+}
+
+#L:hover{
+    transform: scale(1.1);
+}
+
+#O{
+    color:black;
+    margin-left:16vw;
+    margin-top:1vh;
+}
+
+.n{
+    cursor: pointer;
+}
+

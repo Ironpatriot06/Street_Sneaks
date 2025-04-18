@@ -66,14 +66,18 @@ nav ul span{
 }
 
 .gri{
-  background-color: rgb(46, 46, 46);
+  background-image: url("src/assets/mab.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 97vh;
 }
 
 .bgg{
   background-color: rgb(22, 22, 22);
-  padding: 8vh 7.5vw;
+  padding:0vh 0vw;
+  margin-top:0vh;
   color:white;
   font-family: "Girassol", serif;
   transition: background-color 0.3s ease, transform 0.3s ease; 
@@ -84,8 +88,8 @@ nav ul span{
   transform: scale(1.1);
 }
 
-.hu{
-  margin-top:8vh;
+.huu{
+  margin-top:9vh;
 }
 
 .main{
@@ -178,7 +182,7 @@ nav ul span{
 }
 
 .sho:hover{
-  background-color: rgb(241, 241, 241);
+  background-color: white;
   border-radius: 10px 10px;
   cursor: pointer;
   transform: scale(1.1);
@@ -196,17 +200,15 @@ nav ul span{
 }
 
 .sho2:hover{
-  background-color: rgb(241, 241, 241);
+  background-color:white;
   border-radius: 10px 10px;
   cursor: pointer;
   transform: scale(1.1);
 }
 
-
 .imgg{
   height: 25vh;
   width: 21vw;
-  background-image: url("src/assets/shoe2.jpg");
   background-repeat: none;
   background-size: contain;
   background-size: 42.3vh 12.8vw;
@@ -214,14 +216,76 @@ nav ul span{
   margin-top: 4vh;
 }
 
-.imgg:hover{
-  background-image: url("src/assets/shoe.jpg");
-
+.do{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/1_401119fa-69e1-4ded-abdb-2e955a732591.png?v=1744911722&amp;width=1080");
+  background-position: center;
+  /* background-size: contain; */
+  background-size: 95%;
+  transition: 0.1s all ease-in;
 }
-.imgg2{
+.do:hover{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/2_4a517663-b780-43d6-b47d-cfcec965a48b.png?v=1744911722&amp;width=1080" );
+  background-position: center;
+}
+
+.ad{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/1_81971b8f-12b6-4f17-9bec-d534d2f82d04.png?v=1744911933&amp;width=1080");
+  background-position: center;
+  /* background-size: contain; */
+  background-size: 95%;
+  transition: 0.1s all ease-in;
+}
+.ad:hover{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/2_1b125f7a-e08c-4460-83a4-8867b7018305.png?v=1744911933&amp;width=1080");
+  background-position: center;
+}
+.nk{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/1_a6c57b52-aef1-4300-afc8-8c65d0542e66.png?v=1744910930&amp;width=1080");
+  background-position: center;
+  /* background-size: contain; */
+  background-size: 95%;
+  transition: 0.1s all ease-in;
+}
+.nk:hover{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/2_6de68890-d817-468d-a18a-6d81abade749.png?v=1744910930&amp;width=1080");
+  background-position: center;
+}
+.nb{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/NewBalance9060BoneSparrow.png?v=1744911372&amp;width=540");
+  background-position: center;
+  /* background-size: contain; */
+  background-size: 95%;
+  transition: 0.1s all ease-in;
+}
+.nb:hover{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/NewBalance9060BoneSparrow1.png?v=1744911372&amp;width=540");
+  background-position: center;
+}
+/* 
+.img22{
   height: 25vh;
   width: 19vw;
   background-image: url("src/assets/shif.jpg");
+  background-repeat: none;
+  background-size: contain;
+  background-size: 38.5vh 12.5vw;
+  margin-left: 1vw;
+  margin-top: 4vh;
+}
+.imgg22:hover{
+  height: 25vh;
+  width: 19vw;
+  background-image: url("src/assets/shib.jpg");
+  background-repeat: none;
+  background-size: contain;
+  background-size: 38.5vh 12.5vw;
+  margin-left: 1vw;
+  margin-top: 4vh;
+} */
+.imgg2{
+  height: 25vh;
+  width: 19vw;
+  /* background-image: url("src/assets/shif.jpg"); */
   background-repeat: none;
   background-size: contain;
   background-size: 38.5vh 12.5vw;
@@ -232,13 +296,64 @@ nav ul span{
 .imgg2:hover{
   height: 25vh;
   width: 19vw;
-  background-image: url("src/assets/shib.jpg");
+  /* background-image: url("src/assets/shib.jpg"); */
   background-repeat: none;
   background-size: contain;
   background-size: 38.5vh 12.5vw;
   margin-left: 1vw;
   margin-top: 4vh;
 }
+
+.on{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/antidote_f.jpg?v=1743179109&amp;width=1920");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+
+.on:hover{
+  background-image: url("//crepdogcrew.com/cdn/shop/files/antidote_b.jpg?v=1743179109&amp;width=1920");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+
+.hu{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/Amex-front_F.jpg?v=1743248000&width=1200");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+
+.hu:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/Amex-back_F.jpg?v=1743248001&width=1200");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+
+.db{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/image.jpg?v=1744394413&width=1200");
+  background-position-x: 17.8vw ;
+background-size:80%;
+}
+
+.db:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/6_be474636-0de2-4167-a11e-e4087af1716a.png?v=1744803271&width=1000");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+.sp{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/XOXOFront.jpg?v=1741609715&width=1200");
+  background-position-x: 17.8vw ;
+background-size:80%;
+}
+
+.sp:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/XOXOBack.jpg?v=1741609716&width=1200");
+  background-position-x: 17.8vw;
+background-size: 80%;
+}
+
+
+
+
 .imgg3{
   height: 30vh;
   width: 19vw;
@@ -249,6 +364,55 @@ nav ul span{
   margin-left: 1vw;
   margin-top: 4vh;
 }
+
+.gg{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar01_918fa7af-6ee5-4d96-8610-670791f128b3.png?v=1724664290&width=1000");
+  background-size: 80%;
+  background-position-x: 2vw;
+}
+
+.gg:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar02_6a0e1d53-fd20-42a4-934a-55fc138d9fb2.png?v=1722076414&width=1000");
+  background-size: 95%;
+  background-position-x: 0.7vw;
+}
+.bt{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1CrystalStoneBAPEXWatch.png?v=1740997409&width=1000");
+  background-size: 80%;
+  background-position-x: 2vw;
+}
+
+.bt:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1CrystalStoneBAPEXWatch.png?v=1740997409&width=1000");
+  background-size: 95%;
+  background-position-x: 0.7vw;
+}
+.gg2{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/CDCEDITSBYAHMAR_20.png?v=1735287731&width=1000");
+  background-size: 95%;
+  background-position-x: 0vw;
+  background-position-y: 0vw;
+}
+
+.gg2:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/CDCEDITSBYAHMAR_20.png?v=1735287731&width=1000");
+  background-size: 95%;
+  background-position-x: 0.7vw;
+}
+.bt2{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1BAPEXWatchred.png?v=1740996552&width=1000");
+  background-size: 85%;
+  background-position-x: 1vw;
+  background-position-y: 0vw;
+}
+
+.bt2:hover{
+  background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1BAPEXWatchred.png?v=1740996552&width=1000");
+  background-size: 85%;
+  background-position-x: 1vw;
+}
+
+
 
 .nam{
   font-size: 1.1vw;
@@ -393,3 +557,4 @@ input:focus {
   border: 2px solid #ff8a65; /* Custom border color */
   box-shadow: 0 0 5px rgba(255, 138, 101, 0.8); /* Optional shadow */
 }
+

@@ -8,19 +8,15 @@ import Cart from '../Cart/Cart'
 import Sneaker from '../Sneaker/Sneaker'
 import Apparel from '../Apparel/Apparel'
 import Watches from '../Watches/Watches';
+import Nav from '../Nav/Nav'
+import Footer from '../Footer/Footer'
+import Product from '../Product/Product'
 
 const Home = () => {
-  const [showSearch, setShowSearch] = useState(false);
-  const [searchQuery, setSearchQuery] = useState('');
+
 
   const navigate = useNavigate();
 
-  const handleprofile = () =>{
-    navigate("/profile");
-  }
-  const handlecart = () =>{
-    navigate("/cart");
-  }
   const handlesneak = () =>{
     navigate("/sneaker");
   }
@@ -31,43 +27,60 @@ const Home = () => {
     navigate("/watches");
   }
 
+  const handlessp = () =>{
+    navigate("/product-app");
+  }
+
+  const handlesss = () =>{
+    navigate("/productC");
+  }
+  const handless = () =>{
+    navigate("/product");
+  }
+  const handlertt = () =>{
+    navigate("/product");
+  }
+
+  const imageUrls = [
+    "https://crepdogcrew.com/cdn/shop/products/ADIDASYEEZYBOOST350V2BELUGAREFLECTIVE.jpg?v=1744912761&width=1200",
+    "https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar01_4239a1cd-7aff-4fcb-867e-b0230b5491a3.png?v=1744911709&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/On_Running_Cloudtilt_LOEWE_Orange.png?v=1744911483&width=1000",
+    "https://crepdogcrew.com/cdn/shop/products/AJ1HighLost_Found.jpg?v=1744912576&width=1200",
+    "https://crepdogcrew.com/cdn/shop/files/1_6228385e-644a-4b87-a4a4-1fa9c1c1eced.png?v=1744910828&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/1_81971b8f-12b6-4f17-9bec-d534d2f82d04.png?v=1744911933&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/1_a6c57b52-aef1-4300-afc8-8c65d0542e66.png?v=1744910930&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar01_d2205fc8-cbbf-45cf-af06-ccf72471b136.png?v=1744912001&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/Puma_Speedcat_Archive_Haute_Coffee_Frosted_Ivory1.png?v=1744911341&width=500",
+    "https://crepdogcrew.com/cdn/shop/products/AirJordan1RetroHighOGTrueBlue.jpg?v=1744912508&width=1200",
+    "https://crepdogcrew.com/cdn/shop/files/1_cf6571b1-8948-4468-8848-afb9bb84778f.png?v=1744912284&width=1000",
+    "https://crepdogcrew.com/cdn/shop/files/1_6eadab77-8bf3-408a-96ba-bb5699b75fb2.png?v=1744912167&width=1000",
+  ];
+  
+  
+
   return (
     <div>
-        <nav>
-            <ul>
-                <li id="rt"><div className="barcode-text">STREET SNEAKS</div></li>
-                <li id="rtt">
-            {showSearch ? (
-              <input
-                type="text"
-                className="search-input"
-                placeholder="Search..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onBlur={() => setShowSearch(false)}
-                autoFocus
-              />
-            ) : (
-              <MagnifyingGlass
-                size={35}
-                onClick={() => setShowSearch(true)}
-                className="search-icon"
-              />
-            )}
-          </li>
-                <li onClick={handleprofile}><User size={35} /></li>
-                <li onClick={handlecart}><Basket size={35} /></li>
-            </ul>
-        </nav>
-        <div className="gri flex items-center justify-center  bg-gray-100">
-        <div className="grid grid-cols-4 gap-13 hu">
-      {[1, 2, 3, 4, 5, 6,7,8,9,10,11,12].map((item) => (
-        <div key={item} className="bgg">
-          Item {item}
-        </div>
-      ))}
-    </div>
-        </div>
+      <Nav/>
+      <div className="gri flex items-center justify-center bg-gray-100">
+  <div className="grid grid-cols-4 gap-6 huu p-6">
+    {imageUrls.map((url, index) => (
+      <div key={index} className="bgg bg-white rounded shadow hover:shadow-md transition">
+        <img
+          src={url}
+          alt={`Image ${index + 1}`}
+          className="w-full h-48 object-cover rounded"
+          onClick={handlertt}
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
+
         <div className="main">
             <div className="selec flex gap-31">
               <div className="boxs onee" onClick={handleappa}><span>A<span className='nu'>PPAREL</span></span></div>
@@ -76,63 +89,33 @@ const Home = () => {
             </div>
             <h1 id="po">S<span className='nuu'>NEAKERS</span></h1>
             <div className="sele flex">
-              <div className="sho flex"><div className="imgg"></div><span className='nam'>ADDIDS YEEZY 350 CARBON BELUGA</span> <span className='pri'>From &#8377;15,000.00</span></div>
-              <div className="sho flex"><div className="imgg"></div><span className='nam'>ADDIDS YEEZY 350 CARBON BELUGA</span> <span className='pri'>From &#8377;15,000.00</span></div>
-              <div className="sho flex"><div className="imgg"></div><span className='nam'>ADDIDS YEEZY 350 CARBON BELUGA</span> <span className='pri'>From &#8377;15,000.00</span></div>
-              <div className="sho flex"><div className="imgg"></div><span className='nam'>ADDIDS YEEZY 350 CARBON BELUGA</span> <span className='pri'>From &#8377;15,000.00</span></div>
+              <div className="sho flex" onClick={handless}><div className="do imgg"></div><span className='nam'>ON RUNNING CLOUDLILT BLACK IVORY</span> <span className='pri'>From &#8377;21,999.00</span></div>
+              <div className="sho flex" onClick={handless}><div className="nk imgg"></div><span className='nam'>JORDAN 4 RETRO NAVY SUB</span> <span className='pri'>From &#8377;15,999.00</span></div>
+              <div className="sho flex" onClick={handless}><div className="ad imgg"></div><span className='nam'>ADIDAS SAMBA OG BLACK WHITE GUM</span> <span className='pri'>From &#8377;9,999.00</span></div>
+              <div className="sho flex" onClick={handless}><div className="nb imgg"></div><span className='nam'>NEW BALANCE 9060 BONE SPARROW</span> <span className='pri'>From &#8377;11,999.00</span></div>
             </div>
             <button className="view" onClick={handlesneak}>V<span className="nuuu">IEW ALL</span></button>
 
 
             <h1 id="po">A<span className='nuu'>PPAREL</span></h1>
             <div className="sele flex">
-              <div className="sho flex"><div className="imgg2"></div><span className='nam'>NO FLEX SHIRT -ARMANI WHITE</span> <span className='pri'>From &#8377;4,800.00</span></div>
-              <div className="sho flex"><div className="imgg2"></div><span className='nam'>NO FLEX SHIRT -ARMANI WHITE</span> <span className='pri'>From &#8377;4,800.00</span></div>
-              <div className="sho flex"><div className="imgg2"></div><span className='nam'>NO FLEX SHIRT -ARMANI WHITE</span> <span className='pri'>From &#8377;4,800.00</span></div>
-              <div className="sho flex"><div className="imgg2"></div><span className='nam'>NO FLEX SHIRT -ARMANI WHITE</span> <span className='pri'>From &#8377;4,800.00</span></div>
+              <div className="sho flex" onClick={handlessp}><div className="imgg2 hu "></div><span className='nam'>NO FLEX SHIRT -ARMANI WHITE</span> <span className='pri'>From &#8377;4,800.00</span></div>
+              <div className="sho flex" onClick={handlessp}><div className="imgg2 imgg22 on"></div><span className='nam'>Antidote shirt - Baby pink</span> <span className='pri'>From &#8377;6,900.00</span></div>
+              <div className="sho flex" onClick={handlessp}><div className="imgg2 db"></div><span className='nam'>MAKE-OUT SHIRT</span> <span className='pri'>From &#8377;7.099.00</span></div>
+              <div className="sho flex" onClick={handlessp}><div className="imgg2 sp"></div><span className='nam'>XOXO SHIRT - ROYAL BLUE</span> <span className='pri'>From &#8377;5,900.00</span></div>
             </div>
             <button className="view" onClick={handleappa}>V<span className="nuuu">IEW ALL</span></button>
 
 
             <h1 id="po">W<span className='nuu'>ATCHES</span></h1>
             <div className="sele flex">
-              <div className="sho2 flex"><div className="imgg3"></div><span className='nam'>SWATCH X OMEGA BIOCERAMINC MOONSWATCH MISSION MERCURY</span> <span className='pri'>From &#8377;29,800.00</span></div>
-              <div className="sho2 flex"><div className="imgg3"></div><span className='nam'>SWATCH X OMEGA BIOCERAMINC MOONSWATCH MISSION MERCURY</span> <span className='pri'>From &#8377;29,800.00</span></div>
-              <div className="sho2 flex"><div className="imgg3"></div><span className='nam'>SWATCH X OMEGA BIOCERAMINC MOONSWATCH MISSION MERCURY</span> <span className='pri'>From &#8377;29,800.00</span></div>
-              <div className="sho2 flex"><div className="imgg3"></div><span className='nam'>SWATCH X OMEGA BIOCERAMINC MOONSWATCH MISSION MERCURY</span> <span className='pri'>From &#8377;29,800.00</span></div>
+              <div className="sho2 flex" onClick={handlesss}><div className="imgg3 gg"></div><span className='nam'>CASIO MANGA EDITION CLASSIC BLUE</span> <span className='pri'>From &#8377;30,000.00</span></div>
+              <div className="sho2 flex" onClick={handlesss}><div className="imgg3 bt"></div><span className='nam'>BAPE TYPE 1 CRYSTAL STONE</span> <span className='pri'>From &#8377;80,00.00</span></div>
+              <div className="sho2 flex" onClick={handlesss}><div className="imgg3 gg2"></div><span className='nam'>CASIO G1523 GA-2100-9A9DR G-SHOCK</span> <span className='pri'>From &#8377;9,800.00</span></div>
+              <div className="sho2 flex" onClick={handlesss}><div className="imgg3 bt2"></div><span className='nam'>BAPE Type 1 BAPEX Watch Black/Red</span> <span className='pri'>From &#8377;55,000.00</span></div>
             </div>
             <button className="view" onClick={handlewat}>V<span className="nuuu">IEW ALL</span></button>
-
-            <div className="foot flex">
-              <ul className='firs'>
-                <li><h1>KNOW MORE</h1></li>
-                <li>ABOUT US</li>
-                <li>TRACK ORDER</li>
-                <li>STORE LOCATOR</li>
-                <li>CONTACT US</li>
-                <li>FAQ</li>
-                <li>SIZE CHART</li>
-                <li><InstagramLogo size={36} /> street_sneaks</li>
-                {/* <li id="oo"><FacebookLogo size={36} /></li> */}
-              </ul>
-              <ul className='secon'>
-                <li><h1>FOR RETAIL STORES</h1></li>
-                <li>CONTACT: +91 9955442245</li>
-              </ul>
-              <div className="sig flex">
-                Sign up for our Loyalty Program:
-                <input type="email" placeholder='Email'/>
-                <span id="lk">&copy;2025STREETSNEAKS</span>
-              </div>
-              <ul className='threee'>
-                <li><h1>POLICIES</h1></li>
-                <li>PRIVACY</li>
-                <li>SHIPPING</li>
-                <li>TERMS & CONDITIONS</li>
-                <li>RETURN POLICY</li>
-                <li>EXCHANGE YOUR ORDER</li>
-              </ul>
-            </div>
+            <Footer />
         </div>
     </div>
   )
