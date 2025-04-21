@@ -308,6 +308,7 @@ nav ul span{
   background-image: url("//crepdogcrew.com/cdn/shop/files/antidote_f.jpg?v=1743179109&amp;width=1920");
   background-position-x: 17.8vw;
 background-size: 80%;
+transition: 0.3s all ease-in;
 }
 
 .on:hover{
@@ -320,18 +321,21 @@ background-size: 80%;
   background-image: url("https://crepdogcrew.com/cdn/shop/files/Amex-front_F.jpg?v=1743248000&width=1200");
   background-position-x: 17.8vw;
 background-size: 80%;
+transition: 0.3s all ease-in;
 }
 
 .hu:hover{
   background-image: url("https://crepdogcrew.com/cdn/shop/files/Amex-back_F.jpg?v=1743248001&width=1200");
   background-position-x: 17.8vw;
 background-size: 80%;
+
 }
 
 .db{
   background-image: url("https://crepdogcrew.com/cdn/shop/files/image.jpg?v=1744394413&width=1200");
   background-position-x: 17.8vw ;
 background-size:80%;
+transition: 0.3s all ease-in;
 }
 
 .db:hover{
@@ -343,6 +347,7 @@ background-size: 80%;
   background-image: url("https://crepdogcrew.com/cdn/shop/files/XOXOFront.jpg?v=1741609715&width=1200");
   background-position-x: 17.8vw ;
 background-size:80%;
+transition: 0.3s all ease-in;
 }
 
 .sp:hover{
@@ -363,12 +368,17 @@ background-size: 80%;
   background-size: 38.5vh 20vw;
   margin-left: 1vw;
   margin-top: 4vh;
+  transition: 0.3s all ease-in;
 }
 
+.ingg3:hover{
+  transform: scale(1.1);
+}
 .gg{
   background-image: url("https://crepdogcrew.com/cdn/shop/files/EditsbyAhmar01_918fa7af-6ee5-4d96-8610-670791f128b3.png?v=1724664290&width=1000");
   background-size: 80%;
   background-position-x: 2vw;
+  transition: 0.3s all ease-in;
 }
 
 .gg:hover{
@@ -380,6 +390,7 @@ background-size: 80%;
   background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1CrystalStoneBAPEXWatch.png?v=1740997409&width=1000");
   background-size: 80%;
   background-position-x: 2vw;
+  transition: 0.3s all ease-in;
 }
 
 .bt:hover{
@@ -392,6 +403,7 @@ background-size: 80%;
   background-size: 95%;
   background-position-x: 0vw;
   background-position-y: 0vw;
+  transition: 0.3s all ease-in;
 }
 
 .gg2:hover{
@@ -404,12 +416,14 @@ background-size: 80%;
   background-size: 85%;
   background-position-x: 1vw;
   background-position-y: 0vw;
+  transition: 0.3s all ease-in;
 }
 
 .bt2:hover{
   background-image: url("https://crepdogcrew.com/cdn/shop/files/BAPEType1BAPEXWatchred.png?v=1740996552&width=1000");
   background-size: 85%;
   background-position-x: 1vw;
+
 }
 
 

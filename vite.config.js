@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(),tailwindcss(),],
-  base: '/Street_Sneaks/'
+  plugins: [react(), tailwindcss()],
+  base: '',
+  server: {
+    host: true,
+    allowedHosts: ['streetsneaks.com']
+  }
 })
